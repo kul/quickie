@@ -58,6 +58,7 @@
          filter-lines
          (string/join "\n")
          println)
+    (prn "\007")
     (println (clansi/style (str "   " error " errors and " fail " failures   ") :black :bg-red))))
 
 (defn print-result [result]
